@@ -57,6 +57,7 @@ h6 {
   --clr-neutral-darkest: hsl(229, 57%, 11%);
 
   --clr-bar-bg: hsl(229, 57%, 18%);
+  --clr-icon-hvr: hsl(229, 56%, 33%);
 }
 
 /* typography */
@@ -127,6 +128,11 @@ main {
   background-color: var(--clr-neutral-darkest);
   padding: 1rem;
   border-radius: 0.5rem;
+  transition: background-color 0.25s ease;
+}
+.container__icons-wrapper:hover {
+  cursor: pointer;
+  background-color: var(--clr-icon-hvr);
 }
 .container__icons-wrapper img {
   width: 20px;
